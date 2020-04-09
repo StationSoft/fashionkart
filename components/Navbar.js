@@ -27,7 +27,8 @@ const Navbar = props => {
       align="center"
       justify="space-between"
       wrap="wrap"
-      padding="1.5rem"
+      padding="5"
+      // h="12vh"
       bg={bgColor[colorMode]}
       color={textColor[colorMode]}
       {...props}
@@ -55,7 +56,10 @@ const Navbar = props => {
       >
         <IconButton
           onClick={toggleColorMode}
-          icon={colorMode === 'light' ? 'moon' : 'sun'}>
+          icon={colorMode === 'light' ? 'moon' : 'sun'}
+          color={textColor[colorMode]}
+          bg={bgColor[colorMode]}
+        >
           Change Color Mode
         </IconButton>
       </Box>
@@ -76,7 +80,10 @@ const Navbar = props => {
       >
         <IconButton
           onClick={toggleColorMode}
-          icon={colorMode === 'light' ? 'moon' : 'sun'}>
+          icon={colorMode === 'light' ? 'moon' : 'sun'}
+          color={textColor[colorMode]}
+          bg={bgColor[colorMode]}
+        >
           Change Color Mode
         </IconButton>
       </Box>

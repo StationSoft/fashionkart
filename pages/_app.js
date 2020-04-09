@@ -1,5 +1,6 @@
 import {
-  Flex,
+	Flex,
+	Box,
   theme,
 	ThemeProvider,
 	CSSReset,
@@ -24,8 +25,11 @@ function MyApp({ Component, pageProps }) {
 			<ColorModeProvider>
         <Flex direction='column'>
 					<CSSReset />
-					<Navbar />
-					<Flex justify='center' align='center' w='100%' h='92vh'>
+					<Box pos="fixed" w="100%">
+						<Navbar />
+					</Box>
+					
+					<Flex justify='center' align='center' w='100%' pt='20'>
 						<Component {...pageProps} />
 					</Flex>
 				</Flex>
